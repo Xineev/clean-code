@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Markdown
+namespace Markdown.Enums
 {
     /// <summary>
     /// <para>HeaderMarker = #</para>
@@ -17,7 +17,6 @@ namespace Markdown
         Newline,
         HeaderMarker,
         BoldMarker,
-        ItalicMarker,
-        EndOfFile
+        ItalicMarker
     }
 }
