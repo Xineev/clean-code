@@ -1,4 +1,6 @@
-﻿using Markdown.Entities.Converters;
+﻿using Markdown.Entities.Builders;
+using Markdown.Entities.Converters;
+using Markdown.Entities.Parsers;
 using Markdown.Models;
 
 namespace markdown
@@ -18,7 +20,7 @@ namespace markdown
     {
         public static string Render(string text)
         {
-            var markdownConverter = new MarkdownToHtmlConverter();
+            var markdownConverter = new Converter(new HtmlBuilder(), new MarkdownTokenizer());
             return markdownConverter.Convert(text);
         }
     }

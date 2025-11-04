@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Markdown.Models
 {
+    /// <summary>
+    /// Представляет узел абстрактного синтаксического дерева (AST)
+    /// </summary>
     public class Node
     {
         public NodeType Type { get; }
